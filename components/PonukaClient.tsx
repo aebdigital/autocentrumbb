@@ -3,10 +3,7 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import type { Car } from '@/lib/cars';
-<<<<<<< HEAD
 import { Calendar, Gauge, Fuel, Settings2 } from 'lucide-react';
-=======
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
 
 type SortKey = 'price-asc' | 'price-desc' | 'year-desc' | 'year-asc' | 'mileage-asc';
 
@@ -299,41 +296,25 @@ export default function PonukaClient({ cars }: { cars: Car[] }) {
                       <div className="grid grid-cols-2 gap-1.5 mb-3 flex-1">
                         {car.year > 0 && (
                           <div className="flex items-center gap-1.5 text-xs font-montserrat text-gray-600">
-<<<<<<< HEAD
                             <Calendar className="w-4 h-4 text-red-600 flex-shrink-0" />
-=======
-                            <img src="/icons/rok.svg" alt="Rok" className="w-4 h-4 flex-shrink-0" />
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
                             <span>{car.month ? `${car.month}/${car.year}` : car.year}</span>
                           </div>
                         )}
                         {car.mileage > 0 && (
                           <div className="flex items-center gap-1.5 text-xs font-montserrat text-gray-600">
-<<<<<<< HEAD
                             <Gauge className="w-4 h-4 text-red-600 flex-shrink-0" />
-=======
-                            <img src="/icons/kilometre.svg" alt="Najazdené" className="w-4 h-4 flex-shrink-0" />
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
                             <span>{car.mileage.toLocaleString('sk-SK')} km</span>
                           </div>
                         )}
                         {car.fuel && (
                           <div className="flex items-center gap-1.5 text-xs font-montserrat text-gray-600">
-<<<<<<< HEAD
                             <Fuel className="w-4 h-4 text-red-600 flex-shrink-0" />
-=======
-                            <img src="/icons/palivo.svg" alt="Palivo" className="w-4 h-4 flex-shrink-0" />
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
                             <span>{car.fuel}</span>
                           </div>
                         )}
                         {car.transmission && (
                           <div className="flex items-center gap-1.5 text-xs font-montserrat text-gray-600">
-<<<<<<< HEAD
                             <Settings2 className="w-4 h-4 text-red-600 flex-shrink-0" />
-=======
-                            <img src="/icons/prevodovka.svg" alt="Prevodovka" className="w-4 h-4 flex-shrink-0" />
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
                             <span className="truncate">{car.transmission.split('|')[0]}</span>
                           </div>
                         )}

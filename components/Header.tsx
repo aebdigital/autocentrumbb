@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-<<<<<<< HEAD
 import { usePathname } from 'next/navigation';
 import RollingButton from './RollingButton';
 
@@ -27,15 +26,6 @@ export default function Header() {
   return (
     <header className="fixed w-full top-0 z-50">
       {/* Red Top Bar */}
-=======
-
-export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  return (
-    <header className="fixed w-full top-0 z-50">
-      {/* Top bar – full width red */}
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
       <div className="bg-red-600 text-white w-full hidden md:block">
         <div className="container mx-auto px-4 flex justify-between items-center h-9 text-xs font-montserrat">
           <div className="flex items-center gap-1.5">
@@ -71,7 +61,6 @@ export default function Header() {
               <Image src="/logo.png" alt="Autocentrum BB" height={56} width={220} className="h-14 w-auto object-contain" priority />
             </Link>
 
-<<<<<<< HEAD
             <nav className="hidden md:flex items-center gap-2">
               {navLinks.map((link) => (
                 <Link 
@@ -95,20 +84,6 @@ export default function Header() {
                 href="/ponuka"
                 className="bg-red-600 hover:bg-red-700 text-white font-bold font-jakarta text-base px-6 py-2.5 rounded-lg transition-colors"
               />
-=======
-            <nav className="hidden md:flex items-center gap-1">
-              <Link href="/" className="text-gray-800 font-semibold font-jakarta hover:text-red-600 px-3 py-2 text-sm transition-colors">Domov</Link>
-              <Link href="/ponuka" className="text-gray-800 font-semibold font-jakarta hover:text-red-600 px-3 py-2 text-sm transition-colors">Ponuka</Link>
-              <Link href="/vykup" className="text-gray-800 font-semibold font-jakarta hover:text-red-600 px-3 py-2 text-sm transition-colors">Výkup vozidiel</Link>
-              <Link href="/blog" className="text-gray-800 font-semibold font-jakarta hover:text-red-600 px-3 py-2 text-sm transition-colors">Blog</Link>
-              <Link href="/kontakt" className="text-gray-800 font-semibold font-jakarta hover:text-red-600 px-3 py-2 text-sm transition-colors">Kontakt</Link>
-            </nav>
-
-            <div className="hidden md:flex items-center gap-3">
-              <Link href="/ponuka" className="bg-red-600 hover:bg-red-700 text-white font-bold font-jakarta text-base px-6 py-2.5 rounded-lg transition-colors">
-                PONUKA
-              </Link>
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
             </div>
 
             <button className="md:hidden p-2 focus:outline-none bg-transparent border-none cursor-pointer" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
@@ -133,7 +108,6 @@ export default function Header() {
           </button>
         </div>
         <nav className="flex flex-col p-8 gap-5">
-<<<<<<< HEAD
           {navLinks.map((link) => (
             <Link 
               key={link.href}
@@ -146,13 +120,6 @@ export default function Header() {
               {link.name}
             </Link>
           ))}
-=======
-          <Link href="/" className="text-black font-bold font-jakarta text-3xl hover:text-red-600 transition-colors" onClick={() => setIsMenuOpen(false)}>Domov</Link>
-          <Link href="/ponuka" className="text-black font-bold font-jakarta text-3xl hover:text-red-600 transition-colors" onClick={() => setIsMenuOpen(false)}>Ponuka</Link>
-          <Link href="/vykup" className="text-black font-bold font-jakarta text-3xl hover:text-red-600 transition-colors" onClick={() => setIsMenuOpen(false)}>Výkup vozidiel</Link>
-          <Link href="/blog" className="text-black font-bold font-jakarta text-3xl hover:text-red-600 transition-colors" onClick={() => setIsMenuOpen(false)}>Blog</Link>
-          <Link href="/kontakt" className="text-black font-bold font-jakarta text-3xl hover:text-red-600 transition-colors" onClick={() => setIsMenuOpen(false)}>Kontakt</Link>
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
           <a href="tel:+421905241887" className="text-red-600 font-bold font-montserrat text-xl mt-4" onClick={() => setIsMenuOpen(false)}>+421 905 241 887</a>
         </nav>
       </div>

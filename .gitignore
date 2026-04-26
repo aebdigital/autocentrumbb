@@ -1,8 +1,5 @@
 node_modules
 .next
 .env.local
-<<<<<<< HEAD
-=======
 *.tsbuildinfo
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
 .DS_Store
