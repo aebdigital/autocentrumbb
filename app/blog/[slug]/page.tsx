@@ -1,9 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-<<<<<<< HEAD
 import Image from 'next/image';
-=======
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
 import { notFound } from 'next/navigation';
 import { BLOG_POSTS, getPostBySlug } from '@/lib/blog';
 
@@ -11,14 +8,9 @@ export function generateStaticParams() {
   return BLOG_POSTS.map((p) => ({ slug: p.slug }));
 }
 
-<<<<<<< HEAD
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
-=======
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const post = getPostBySlug(params.slug);
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
   if (!post) return {};
   return { title: `${post.title} | Autocentrum BB`, description: post.excerpt };
 }
@@ -85,14 +77,9 @@ function renderContent(md: string) {
   return elements;
 }
 
-<<<<<<< HEAD
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = getPostBySlug(slug);
-=======
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = getPostBySlug(params.slug);
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
   if (!post) notFound();
 
   return (
@@ -114,7 +101,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
       <div className="container mx-auto px-4 py-10">
         <div className="max-w-3xl mx-auto">
-<<<<<<< HEAD
           <div className="relative aspect-video mb-8 rounded-xl overflow-hidden shadow-lg border border-gray-100">
             <Image
               src={post.image}
@@ -124,8 +110,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               priority
             />
           </div>
-=======
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
             {renderContent(post.content)}
           </div>

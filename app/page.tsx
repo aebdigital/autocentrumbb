@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { getCars } from '@/lib/cars';
 import ParallaxHero from '@/components/ParallaxHero';
 import FeeCalculator from '@/components/FeeCalculator';
-<<<<<<< HEAD
 import RollingButton from '@/components/RollingButton';
 import AnimatedSection from '@/components/AnimatedSection';
 import Image from 'next/image';
@@ -11,9 +10,6 @@ import type { Metadata } from 'next';
 import { BLOG_POSTS } from '@/lib/blog';
 import AboutSection from '@/components/AboutSection';
 import ReviewsSection from '@/components/ReviewsSection';
-=======
-import type { Metadata } from 'next';
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
 
 export const metadata: Metadata = {
   title: 'Autocentrum BB – Autobazár Banská Bystrica',
@@ -47,11 +43,7 @@ const SERVICES = [
 
 const HERO_TILES = [
   { label: 'KÚPA', href: '/ponuka', imageSrc: '/services/kupa.webp', position: 'center' },
-<<<<<<< HEAD
   { label: 'VÝKUP', href: 'https://vykupauta.sk/', imageSrc: '/services/vykup.jpg', position: 'center' },
-=======
-  { label: 'VÝKUP', href: '/vykup', imageSrc: '/services/vykup.jpg', position: 'center' },
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
   { label: 'LEASING / AUTOÚVER', href: '/leasing', imageSrc: '/services/leasing.jpg', position: 'center' },
   { label: 'TLAČIVÁ', href: '/tlacivy', imageSrc: '/services/tlaciva.jpg', position: 'center' },
   { label: 'POŽIČOVŇA', href: '/pozicovna', imageSrc: '/services/pozicovna.jpg', position: 'center' },
@@ -61,7 +53,6 @@ export default async function HomePage() {
   const allCars = await getCars();
   const featured = allCars.slice(0, 8);
 
-<<<<<<< HEAD
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "AutoDealer",
@@ -107,24 +98,17 @@ export default async function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <ParallaxHero imageSrc="/hero.jpg">
-        <div className="container mx-auto px-4 pt-10 pb-10">
-=======
-  return (
-    <div className="min-h-screen bg-white">
-      <ParallaxHero imageSrc="/hero.jpg">
         <div className="container mx-auto px-4 pt-32 pb-28">
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
           <div className="flex items-center gap-8">
             <div className="flex-1 min-w-0">
               <p className="text-red-400 font-montserrat font-light text-sm uppercase tracking-widest mb-3">Autobazár</p>
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 font-jakarta leading-tight">
+              <h1 className="text-3xl md:text-7xl font-bold mb-6 font-jakarta leading-tight">
                 AUTOCENTRUM BB –<br />
                 <span className="text-red-400">BANSKÁ BYSTRICA</span>
               </h1>
               <p className="text-lg md:text-xl mb-10 max-w-xl leading-relaxed font-montserrat font-light text-gray-200">
                 Viac ako 10 rokov pomáhame pri kúpe, predaji, dovoze a prenájme auta. Férový prístup, kvalitné služby a spokojní zákazníci.
               </p>
-<<<<<<< HEAD
                <div className="flex flex-col sm:flex-row gap-4">
                 <RollingButton
                   text="PONUKA"
@@ -145,34 +129,13 @@ export default async function HomePage() {
                 fill
                 className="object-contain drop-shadow-2xl"
                 priority
-=======
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/ponuka" className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded text-white font-bold text-lg font-jakarta transition-colors text-center">
-                  PONUKA
-                </Link>
-                <Link href="/kontakt" className="bg-white/10 hover:bg-white/20 border border-white/40 px-8 py-4 rounded text-white font-bold text-lg font-jakarta transition-colors text-center">
-                  Kontakt
-                </Link>
-              </div>
-            </div>
-            <div className="hidden lg:flex flex-shrink-0 w-[520px] items-end justify-end self-end">
-              <img
-                src="/carhero.png"
-                alt="Autocentrum BB"
-                className="w-full drop-shadow-2xl object-contain"
-                style={{ maxHeight: '420px' }}
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
               />
             </div>
           </div>
         </div>
       </ParallaxHero>
 
-<<<<<<< HEAD
       <AnimatedSection className="relative z-10 -mt-12">
-=======
-      <div className="relative z-10 -mt-12">
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
             {HERO_TILES.map((tile) => (
@@ -195,27 +158,10 @@ export default async function HomePage() {
             ))}
           </div>
         </div>
-<<<<<<< HEAD
       </AnimatedSection>
 
       {featured.length > 0 && (
         <AnimatedSection className="py-16 bg-gray-50">
-=======
-      </div>
-
-      <section className="bg-red-600 text-white py-10 mt-10">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div><p className="text-5xl font-bold font-jakarta">10+</p><p className="text-lg mt-2 font-montserrat font-light">Rokov na trhu</p></div>
-            <div><p className="text-5xl font-bold font-jakarta">1 200+</p><p className="text-lg mt-2 font-montserrat font-light">Predaných vozidiel</p></div>
-            <div><p className="text-5xl font-bold font-jakarta">100%</p><p className="text-lg mt-2 font-montserrat font-light">Spokojných zákazníkov</p></div>
-          </div>
-        </div>
-      </section>
-
-      {featured.length > 0 && (
-        <section className="py-16 bg-gray-50">
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold font-jakarta text-gray-900 mb-8">Aktuálna ponuka</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -224,7 +170,6 @@ export default async function HomePage() {
                 return (
                   <Link key={car.id} href={`/vozidlo/${car.slug}`} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col">
                     <div className="relative aspect-[4/3] bg-gray-200 overflow-hidden">
-<<<<<<< HEAD
                       {thumb ? (
                         <Image
                           src={thumb}
@@ -236,25 +181,15 @@ export default async function HomePage() {
                       ) : (
                         <div className="w-full h-full flex items-center justify-center text-5xl">🚗</div>
                       )}
-=======
-                      {thumb ? <img src={thumb} alt={car.title} className="w-full h-full object-cover" loading="lazy" /> : <div className="w-full h-full flex items-center justify-center text-5xl">🚗</div>}
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
                       {car.isReserved && <div className="absolute top-2 left-2 bg-gray-800 text-white text-xs font-bold font-montserrat px-2 py-1 rounded">REZERVOVANÉ</div>}
                     </div>
                     <div className="p-3 flex flex-col flex-1">
                       <h3 className="font-bold font-jakarta text-gray-900 text-sm leading-tight mb-2 min-h-[2.5rem]">{car.title}</h3>
                       <div className="grid grid-cols-2 gap-1 mb-3 flex-1">
-<<<<<<< HEAD
                         {car.year > 0 && <div className="flex items-center gap-1 text-xs font-montserrat text-gray-500"><Image src="/icons/rok.svg" alt="" width={14} height={14} /><span>{car.year}</span></div>}
                         {car.mileage > 0 && <div className="flex items-center gap-1 text-xs font-montserrat text-gray-500"><Image src="/icons/kilometre.svg" alt="" width={14} height={14} /><span>{car.mileage.toLocaleString('sk-SK')} km</span></div>}
                         {car.fuel && <div className="flex items-center gap-1 text-xs font-montserrat text-gray-500"><Image src="/icons/palivo.svg" alt="" width={14} height={14} /><span>{car.fuel}</span></div>}
                         {car.transmission && <div className="flex items-center gap-1 text-xs font-montserrat text-gray-500"><Image src="/icons/prevodovka.svg" alt="" width={14} height={14} /><span className="truncate">{car.transmission}</span></div>}
-=======
-                        {car.year > 0 && <div className="flex items-center gap-1 text-xs font-montserrat text-gray-500"><img src="/icons/rok.svg" alt="" className="w-3.5 h-3.5" /><span>{car.year}</span></div>}
-                        {car.mileage > 0 && <div className="flex items-center gap-1 text-xs font-montserrat text-gray-500"><img src="/icons/kilometre.svg" alt="" className="w-3.5 h-3.5" /><span>{car.mileage.toLocaleString('sk-SK')} km</span></div>}
-                        {car.fuel && <div className="flex items-center gap-1 text-xs font-montserrat text-gray-500"><img src="/icons/palivo.svg" alt="" className="w-3.5 h-3.5" /><span>{car.fuel}</span></div>}
-                        {car.transmission && <div className="flex items-center gap-1 text-xs font-montserrat text-gray-500"><img src="/icons/prevodovka.svg" alt="" className="w-3.5 h-3.5" /><span className="truncate">{car.transmission}</span></div>}
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
                       </div>
                       <div className="border-t border-gray-100 pt-2">
                         <p className="text-xl font-bold font-jakarta text-red-600">{car.price > 0 ? `${car.price.toLocaleString('sk-SK')} €` : 'Cena na vyžiadanie'}</p>
@@ -265,7 +200,6 @@ export default async function HomePage() {
               })}
             </div>
             <div className="text-center mt-10">
-<<<<<<< HEAD
               <RollingButton
                 text="Všetky autá →"
                 href="/ponuka"
@@ -283,19 +217,6 @@ export default async function HomePage() {
       <AnimatedSection className="py-16 bg-white border-b border-gray-100">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-=======
-              <Link href="/ponuka" className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold font-jakarta px-10 py-4 rounded-lg text-lg transition-colors">
-                Všetky autá →
-              </Link>
-            </div>
-          </div>
-        </section>
-      )}
-
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
             <div className="flex flex-col md:flex-row md:items-start md:gap-16 mb-10">
               <div className="flex-1 mb-6 md:mb-0">
                 <p className="text-red-600 font-montserrat font-semibold text-xs uppercase tracking-widest mb-2">AUTOCENTRUMBB</p>
@@ -312,7 +233,6 @@ export default async function HomePage() {
             <FeeCalculator />
           </div>
         </div>
-<<<<<<< HEAD
       </AnimatedSection>
 
       <AnimatedSection className="py-16 bg-gray-50">
@@ -361,28 +281,6 @@ export default async function HomePage() {
           title="Autocentrum BB mapa"
         />
       </AnimatedSection>
-=======
-      </section>
-
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold font-jakarta text-center mb-10 text-gray-900">Naše služby</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {SERVICES.map((s) => (
-              <div key={s.title} className="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
-                <div className="mb-4">{s.svg}</div>
-                <h3 className="text-lg font-bold font-jakarta mb-2 text-gray-900">{s.title}</h3>
-                <p className="text-gray-500 font-montserrat font-light text-sm leading-relaxed">{s.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="h-96">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.0!2d19.1451!3d48.7367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zWnZvbGVuc2vDoSBjZXN0YSAxNDEsIEJhbnNrw6EgQnlzdHJpY2E!5e0!3m2!1ssk!2ssk!4v1600000000000" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Autocentrum BB mapa" />
-      </section>
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
     </div>
   );
 }

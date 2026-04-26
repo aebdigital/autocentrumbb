@@ -1,9 +1,6 @@
 import type { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
-<<<<<<< HEAD
 import { Phone, Mail } from 'lucide-react';
-=======
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
 
 export const metadata: Metadata = {
   title: 'Kontakt | Autocentrum BB – Banská Bystrica',
@@ -35,25 +32,17 @@ export default function KontaktPage() {
 
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-<<<<<<< HEAD
                 <div className="w-10 h-10 bg-red-50 flex items-center justify-center rounded-lg text-red-600">
                   <Phone size={20} />
                 </div>
-=======
-                <span className="text-2xl">📞</span>
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
                 <a href="tel:+421905241887" className="text-gray-700 hover:text-red-600 font-semibold transition-colors text-lg">
                   +421 905 241 887
                 </a>
               </div>
               <div className="flex items-center gap-3">
-<<<<<<< HEAD
                 <div className="w-10 h-10 bg-red-50 flex items-center justify-center rounded-lg text-red-600">
                   <Mail size={20} />
                 </div>
-=======
-                <span className="text-2xl">✉️</span>
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
                 <a href="mailto:info@autocentrumbb.sk" className="text-gray-700 hover:text-red-600 font-semibold transition-colors text-lg">
                   info@autocentrumbb.sk
                 </a>
@@ -111,15 +100,9 @@ export default function KontaktPage() {
         </div>
 
         {/* Map */}
-<<<<<<< HEAD
         <div className="mt-12 rounded-xl overflow-hidden shadow-sm h-96">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.068270564639!2d19.145100000000004!3d48.7367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47153e7f4f9cd655%3A0x99675ac215cf74b0!2sAutocentrumbb%20s.r.o.!5e0!3m2!1ssk!2ssk!4v1714100000000!5m2!1ssk!2ssk"
-=======
-        <div className="mt-12 rounded-xl overflow-hidden shadow-sm h-80">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.0!2d19.1451!3d48.7367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zWnZvbGVuc2vDoSBjZXN0YSAxNDEsIEJhbnNrw6EgQnlzdHJpY2E!5e0!3m2!1ssk!2ssk!4v1600000000000"
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -129,7 +112,6 @@ export default function KontaktPage() {
             title="Autocentrum BB mapa"
           />
         </div>
-<<<<<<< HEAD
         <div className="mt-4 text-center">
           <a
             href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47153e7f4f9cd655:0x99675ac215cf74b0?sa=X"
@@ -140,8 +122,6 @@ export default function KontaktPage() {
             Otvoriť v Google Maps →
           </a>
         </div>
-=======
->>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
       </div>
     </div>
   );
