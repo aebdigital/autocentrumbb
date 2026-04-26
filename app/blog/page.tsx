@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+<<<<<<< HEAD
 import Image from 'next/image';
+=======
+>>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
 import { BLOG_POSTS } from '@/lib/blog';
 
 export const metadata: Metadata = {
@@ -24,6 +27,7 @@ export default function BlogPage() {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
+<<<<<<< HEAD
               className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col group"
             >
               <div className="relative aspect-video overflow-hidden">
@@ -36,6 +40,13 @@ export default function BlogPage() {
                 <div className="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-bold font-montserrat px-3 py-1 rounded-full uppercase tracking-wider">
                   {post.category}
                 </div>
+=======
+              className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col"
+            >
+              {/* Category band */}
+              <div className="bg-red-600 text-white text-xs font-bold font-montserrat px-4 py-2">
+                {post.category}
+>>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
               </div>
               <div className="p-6 flex flex-col flex-1">
                 <p className="text-xs text-gray-400 font-montserrat mb-3">

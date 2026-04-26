@@ -22,7 +22,11 @@ export default function ParallaxHero({ imageSrc, children, className = '' }: Pro
   }, []);
 
   return (
+<<<<<<< HEAD
     <section className={`relative h-[80vh] flex items-center justify-center text-white overflow-hidden ${className}`}>
+=======
+    <section className={`relative min-h-screen flex items-center justify-center text-white overflow-hidden ${className}`}>
+>>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
       {/* Parallax background */}
       <div
         ref={bgRef}

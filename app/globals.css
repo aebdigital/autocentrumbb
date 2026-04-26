@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+=======
+>>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+>>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
 html {
   scroll-behavior: smooth;
 }

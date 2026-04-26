@@ -143,9 +143,15 @@ export default function CookieConsent() {
     <>
       {showBanner && (
         <div className="fixed inset-x-0 bottom-0 z-[80] p-4 sm:p-6">
+<<<<<<< HEAD
           <div className="mx-auto max-w-7xl rounded-3xl border border-gray-200 bg-white p-6 shadow-2xl">
             <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
               <div className="max-w-4xl">
+=======
+          <div className="mx-auto max-w-5xl rounded-3xl border border-gray-200 bg-white p-6 shadow-2xl">
+            <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+              <div className="max-w-3xl">
+>>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
                 <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-red-600">Cookies</p>
                 <h2 className="mb-3 font-jakarta text-2xl font-bold text-gray-900">Táto stránka používa cookies</h2>
                 <p className="font-montserrat text-sm leading-7 text-gray-600">
@@ -160,11 +166,19 @@ export default function CookieConsent() {
                   .
                 </p>
               </div>
+<<<<<<< HEAD
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center shrink-0">
                 <button type="button" onClick={rejectOptional} className="whitespace-nowrap rounded-xl border border-gray-300 px-6 py-3 font-jakarta text-sm font-bold text-gray-700 transition hover:border-gray-400 hover:bg-gray-50">
                   Odmietnuť voliteľné
                 </button>
                 <button type="button" onClick={acceptAll} className="whitespace-nowrap rounded-xl bg-red-600 px-6 py-3 font-jakarta text-sm font-bold text-white transition hover:bg-red-700">
+=======
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <button type="button" onClick={rejectOptional} className="rounded-xl border border-gray-300 px-5 py-3 font-jakarta text-sm font-bold text-gray-700 transition hover:border-gray-400 hover:bg-gray-50">
+                  Odmietnuť voliteľné
+                </button>
+                <button type="button" onClick={acceptAll} className="rounded-xl bg-red-600 px-5 py-3 font-jakarta text-sm font-bold text-white transition hover:bg-red-700">
+>>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
                   Prijať všetko
                 </button>
               </div>
@@ -207,6 +221,7 @@ export default function CookieConsent() {
             </div>
 
             <div className="flex flex-col gap-3 border-t border-gray-200 px-6 py-5 sm:flex-row sm:justify-end">
+<<<<<<< HEAD
               <button type="button" onClick={rejectOptional} className="whitespace-nowrap rounded-xl border border-gray-300 px-5 py-3 font-jakarta text-sm font-bold text-gray-700 transition hover:border-gray-400 hover:bg-gray-50">
                 Odmietnuť voliteľné
               </button>
@@ -214,6 +229,15 @@ export default function CookieConsent() {
                 Uložiť nastavenia
               </button>
               <button type="button" onClick={acceptAll} className="whitespace-nowrap rounded-xl bg-red-600 px-5 py-3 font-jakarta text-sm font-bold text-white transition hover:bg-red-700">
+=======
+              <button type="button" onClick={rejectOptional} className="rounded-xl border border-gray-300 px-5 py-3 font-jakarta text-sm font-bold text-gray-700 transition hover:border-gray-400 hover:bg-gray-50">
+                Odmietnuť voliteľné
+              </button>
+              <button type="button" onClick={saveCurrentSettings} className="rounded-xl border border-red-200 bg-red-50 px-5 py-3 font-jakarta text-sm font-bold text-red-700 transition hover:bg-red-100">
+                Uložiť nastavenia
+              </button>
+              <button type="button" onClick={acceptAll} className="rounded-xl bg-red-600 px-5 py-3 font-jakarta text-sm font-bold text-white transition hover:bg-red-700">
+>>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
                 Prijať všetko
               </button>
             </div>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import CookieSettingsButton from '@/components/CookieSettingsButton';
+<<<<<<< HEAD
 import Image from 'next/image';
 
 export default function Footer() {
@@ -27,6 +28,15 @@ export default function Footer() {
           <Link href="/">
             <Image src="/logo.png" alt="AUTOCENTRUM BB logo" width={180} height={50} className="h-12 w-auto" />
           </Link>
+=======
+
+export default function Footer() {
+  return (
+    <footer className="bg-black text-white py-12">
+      <div className="container mx-auto px-4">
+        <div className="mb-8">
+          <span className="text-2xl font-bold font-jakarta text-red-400">AUTOCENTRUM BB</span>
+>>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
@@ -35,7 +45,10 @@ export default function Footer() {
             <ul className="space-y-2 font-montserrat text-gray-400">
               <li><Link href="/" className="hover:text-white transition-colors">Domov</Link></li>
               <li><Link href="/ponuka" className="hover:text-white transition-colors">Ponuka</Link></li>
+<<<<<<< HEAD
               <li><Link href="https://vykupauta.sk/" className="hover:text-white transition-colors">Výkup vozidiel</Link></li>
+=======
+>>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
               <li><Link href="/kontakt" className="hover:text-white transition-colors">Kontakt</Link></li>
               <li><Link href="/ochrana-osobnych-udajov" className="hover:text-white transition-colors">Ochrana osobných údajov</Link></li>
               <li><CookieSettingsButton className="hover:text-white transition-colors">Cookies</CookieSettingsButton></li>

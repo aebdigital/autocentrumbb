@@ -110,7 +110,11 @@ export default function FeeCalculator() {
             <select
               value={power}
               onChange={(e) => onPowerChange(Number(e.target.value))}
+<<<<<<< HEAD
               className="w-full max-w-lg border border-gray-300 rounded-lg px-3 py-2.5 text-sm font-montserrat focus:outline-none focus:border-red-500 bg-white appearance-none cursor-pointer"
+=======
+              className="w-full max-w-sm border border-gray-300 rounded-lg px-3 py-2.5 text-sm font-montserrat focus:outline-none focus:border-red-500 bg-white appearance-none cursor-pointer"
+>>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
             >
               <option value={-1} disabled>Vyberte výkon motora</option>
               {POWER_OPTIONS.map((opt, i) => (
@@ -127,7 +131,11 @@ export default function FeeCalculator() {
               <select
                 value={euro}
                 onChange={(e) => onEuroChange(Number(e.target.value))}
+<<<<<<< HEAD
                 className="w-full max-w-lg border border-gray-300 rounded-lg px-3 py-2.5 text-sm font-montserrat focus:outline-none focus:border-red-500 bg-white appearance-none cursor-pointer"
+=======
+                className="w-full max-w-sm border border-gray-300 rounded-lg px-3 py-2.5 text-sm font-montserrat focus:outline-none focus:border-red-500 bg-white appearance-none cursor-pointer"
+>>>>>>> 96c9bf39e4c907224a595cab9dca0195bf061d02
               >
                 <option value={-1} disabled>Vyberte emisnú normu</option>
                 {EURO_OPTIONS.map((opt, i) => (
