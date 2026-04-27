@@ -15,7 +15,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: "Spotreba paliva patrí medzi základné ukazovatele efektivity každého vozidla. Ak ju pravidelne sledujete a viete ju správne vypočítať, môžete výrazne o...",
     date: '2025-03-15',
     category: 'Tipy a rady',
-    image: 'https://www.autocentrumbb.sk/wp-content/uploads/2025/05/20200111071104-Spotreba01.jpg',
+    image: '/blog/spotreba-paliva.jpg',
     content: `
 Spotreba paliva patrí medzi základné ukazovatele efektivity každého vozidla. Ak ju pravidelne sledujete a viete ju správne vypočítať, môžete výrazne ovplyvniť svoje mesačné náklady, predísť technickým problémom a zároveň prispieť k ekologickejšiemu spôsobu jazdy. V nasledujúcich riadkoch si ukážeme jednoduchý spôsob výpočtu reálnej spotreby paliva a tiež niekoľko praktických tipov, ako ju udržať čo najnižšiu.
 ## **Ako vypočítať reálnu spotrebu paliva?**
@@ -72,7 +72,7 @@ Autocentrumbb
     excerpt: "Odhlásenie auta je dôležitý administratívny proces, ktorý musíte absolvovať pri dlhodobom nepoužívaní alebo pri jeho vyradení z evidencie. V tomto člá...",
     date: '2025-02-28',
     category: 'Administratíva',
-    image: 'https://www.autocentrumbb.sk/wp-content/uploads/2025/05/shutterstock_1707447007.webp',
+    image: '/blog/odhlasenie-auta.webp',
     content: `
 Odhlásenie auta je dôležitý administratívny proces, ktorý musíte absolvovať pri dlhodobom nepoužívaní alebo pri jeho vyradení z evidencie. V tomto článku sa podrobne pozrieme na to, ako celý proces prebieha, aké dokumenty budete potrebovať, aké sú poplatky a ako môžete odhlásenie vykonať aj online.
 ## **Druhy odhlásenia vozidla**
@@ -128,7 +128,7 @@ Autocentrumbb
     excerpt: "Splnomocnenie predstavuje poskytnutie oprávnenia druhej osobe na vykonávanie zvolených administratívnych úkonov vo vašom mene. Najčastejší prípad vytv...",
     date: '2025-01-20',
     category: 'Administratíva',
-    image: 'https://www.autocentrumbb.sk/wp-content/uploads/2025/05/man-signing-car-document_fd14536d-b5c3-4ce2-a01f-7d6d95eab7a1.jpg',
+    image: '/blog/splnomocnenie.jpg',
     content: `
 Splnomocnenie predstavuje poskytnutie oprávnenia druhej osobe na vykonávanie zvolených administratívnych úkonov vo vašom mene. Najčastejší prípad vytvárania splnomocnenia je ak nemôžete osobne vybaviť nejaký úkon, ktorý si vyžaduje vašu prítomnosť. Jednou z týchto situácii je aj prepis vozidla
 Splnomocnenie na stiahnutie vo formáte PDF a docx (Word)
@@ -193,7 +193,7 @@ Autocentrumbb
     excerpt: "## **Ako pripraviť vozidlo na technickú a emisnú kontrolu?** Pravidelná technická kontrola (STK) a emisná kontrola (EK) sú povinné procesy, ktoré pomá...",
     date: '2025-01-05',
     category: 'Tipy a rady',
-    image: 'https://www.autocentrumbb.sk/wp-content/uploads/2025/05/paluska_autoskola_STK.jpg',
+    image: '/blog/stk-ek.jpg',
     content: `
 ## **Ako pripraviť vozidlo na technickú a emisnú kontrolu?**
 Pravidelná technická kontrola (STK) a emisná kontrola (EK) sú povinné procesy, ktoré pomáhajú udržiavať bezpečnosť vozidiel na cestách a minimalizovať ich negatívny vplyv na životné prostredie. Správna príprava pred týmito kontrolami vám môže ušetriť čas, peniaze a nepríjemnosti. Prečítajte si podrobného sprievodcu, ktorý vám pomôže pripraviť vaše vozidlo na tieto dôležité kontroly.
@@ -255,7 +255,7 @@ Autocentrumbb
     excerpt: "Prepis auta je proces, ktorý umožňuje prevod vlastníctva vozidla na nového majiteľa. Tento krok je nevyhnutný pri kúpe alebo predaji vozidla a je potr...",
     date: '2025-01-10',
     category: 'Administratíva',
-    image: 'https://www.autocentrumbb.sk/wp-content/uploads/2025/05/pexels-pixabay-48148-scaled.jpg',
+    image: '/blog/prepis-2025.jpg',
     content: `
 Prepis auta je proces, ktorý umožňuje prevod vlastníctva vozidla na nového majiteľa. Tento krok je nevyhnutný pri kúpe alebo predaji vozidla a je potrebné ho vykonať, aby bol nový majiteľ zapísaný v evidencii vozidiel. Aj v roku 2025 platí, že prepis auta je pomerne jednoduchý, avšak existujú niektoré zmeny, ktoré je dobré poznať.
 ## **Kedy je potrebné vykonať prepis auta?**
